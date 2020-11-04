@@ -6,12 +6,7 @@ app = Flask(__name__)
 # using just before the function. Connect the function with path.
 @app.route('/')
 def hello():
-    return render_template("index.html", number1=12)
-
-
-@app.route('/second')
-def second():
-    return render_template("new.html")
+    return "Hello World!!!"
 
 
 if __name__ == "__main__":
