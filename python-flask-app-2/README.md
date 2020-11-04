@@ -175,69 +175,10 @@ if __name__ == '__main__':
 
 
 - Write a template html file named `greet.html` which takes `name` as parameter under `templates` folder 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" <title>Document</title>
-</head>
-
-<body>
-    <h1> Hello, {{ nm }} </h1>
-    <h1> Welcome to my Greeting Page </h1>
-    <h1> Sum of the numbers {{ sum }} </h1>
-</body>
-
-</html>
-
 
 - Write a template html file named `list10.html` which shows a list counting from 1 to 10 under `templates` folder 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" <title>List100</title>
-</head>
-
-<body>
-    <h1> Created list items </h1>
-    <ul>
-        {% for x in range(1, 101) %}
-        <li>List item {{ x }}</li>
-
-        {% endfor %}
-    </ul>
-
-</body>
-
-</html>
-
-
 
 - Write a template html file named `evens.html` which shows a list of even numbers from 1 to 10 under `templates` folder 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" <title>List evens</title>
-</head>
-
-<body>
-    <h1> Showing Even Number from 1 to 10 </h1>
-    <ul>
-        {% for x in range(1,11) %}
-        {% if x%2==0 %}
-        <li> Number {{ x }} is even </li>
-        {% endif %}
-        {% endfor %}
-
-    </ul>
-</body>
-
-</html>
 
 - Create a folder named `static` under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
 
