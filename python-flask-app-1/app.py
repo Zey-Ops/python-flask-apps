@@ -16,4 +16,4 @@ def second():
 
 if __name__ == "__main__":
     # show the mistakes while working
-    app.run('localhost', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=80)
